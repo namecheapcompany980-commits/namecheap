@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Log in | Account</title>
+<meta name="description" content="Log in to your account to manage domains, hosting and email." />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<!-- ======================= TOP UTILITY BAR ======================= -->
+<div class="utility-bar">
+  <div class="wrap utility-inner">
+    <ul class="utility-list">
+      <li><a href="#" data-demo="24/7 Customer Support">24/7 Customer Support</a></li>
+      <li><a href="#" data-demo="Domain Transfer">Domain Transfer</a></li>
+      <li><a href="#" data-demo="Free PositiveSSL">Free PositiveSSL</a></li>
+      <li><a href="#" data-demo="Domain Privacy">Domain Privacy</a></li>
+      <li><a href="#" data-demo="Money Back Guarantee">Money Back Guarantee</a></li>
+    </ul>
+    <div class="utility-right">
+      <button type="button" class="linkish" data-demo="Language &amp; Currency">EN / USD</button>
+      <button type="button" class="linkish" data-demo="Help Center">Help Center</button>
+    </div>
+  </div>
+</div>
+
+<!-- ======================= HEADER ======================= -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#" data-demo="Home">
+      <span class="logo-mark" aria-hidden="true"></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="#" data-demo="Domains">Domains</a></li>
+        <li><a href="#" data-demo="Hosting">Hosting</a></li>
+        <li><a href="#" data-demo="Website Builders">Website Builders</a></li>
+        <li><a href="#" data-demo="Email">Email</a></li>
+        <li><a href="#" data-demo="Security">Security</a></li>
+        <li><a href="#" data-demo="SSL Certificates">SSL Certificates</a></li>
+        <li><a href="#" data-demo="VPN">VPN</a></li>
+        <li><a href="#" data-demo="Promos">Promos</a></li>
+        <li><a href="#" data-demo="Partner Program">Partner Program</a></li>
+        <li><a href="#" data-demo="Documentation">Documentation</a></li>
+        <li><a href="#" data-demo="Support">Support</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button type="button" class="btn btn-ghost" data-demo="Cart (0)">Cart <span class="badge">0</span></button>
+      <button type="button" class="btn btn-ghost" data-demo="Sign Up">Sign Up</button>
+    </div>
+  </div>
+</header>
+
+<!-- ======================= DOMAIN SEARCH STRIP ======================= -->
+<!-- removed: body is now the centred log-in card only -->
+
+<main class="wrap main-area">
+
+  <!-- ======================= VIEW: LOGIN ======================= -->
+  <section id="view-login" class="view">
+    <div class="login-layout">
+
+      <!-- login card -->
+      <div class="card">
+        <div class="card-head">
+          <h1>Log in to your account</h1>
+          <p class="muted">Access your domains, hosting and email in one place.</p>
+        </div>
+
+        <div class="tabs" role="tablist">
+          <button class="tab is-active" role="tab" aria-selected="true" data-tab="password">Log in with password</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="otp">One-time code</button>
+        </div>
+
+        <!-- password form -->
+        <form id="loginForm" class="tabpane" data-pane="password" novalidate>
+          <div class="field">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" autocomplete="username"
+                   placeholder="Enter your username" spellcheck="false" />
+            <p class="field-error" id="err-username" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="pw-wrap">
+              <input type="password" id="password" name="password" autocomplete="current-password"
+                     placeholder="Enter your password" />
+              <button type="button" class="pw-toggle" id="pwToggle" aria-label="Show password">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12Z"/>
+                  <circle cx="12" cy="12" r="2.8"/>
+                </svg>
+              </button>
+            </div>
+            <p class="field-error" id="err-password" hidden></p>
+          </div>
+
+          <div class="row-between">
+            <label class="check">
+              <input type="checkbox" id="remember" />
+              <span>Remember me</span>
+            </label>
+            <a href="#" class="link" data-demo="Forgot password">Forgot password?</a>
+          </div>
+
+          <div class="form-alert" id="formAlert" hidden></div>
+
+          <button class="btn btn-primary btn-block" type="submit" id="loginBtn">
+            <span class="btn-label">Log in</span>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+
+          <div class="or"><span>or log in with</span></div>
+
+          <div class="social">
+            <button type="button" class="btn btn-social" data-demo="Google">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.4a5.5 5.5 0 0 1-2.4 3.6v3h3.9c2.3-2.1 3.6-5.2 3.6-8.8Z"/><path fill="#34A853" d="M12 24c3.2 0 5.9-1.1 7.9-2.9l-3.9-3a7.2 7.2 0 0 1-10.7-3.8h-4v3.1A12 12 0 0 0 12 24Z"/><path fill="#FBBC05" d="M5.3 14.3a7.2 7.2 0 0 1 0-4.6v-3h-4a12 12 0 0 0 0 10.7l4-3.1Z"/><path fill="#EA4335" d="M12 4.8c1.8 0 3.4.6 4.6 1.8l3.4-3.4A11.6 11.6 0 0 0 12 0 12 12 0 0 0 1.3 6.6l4 3.1A7.2 7.2 0 0 1 12 4.8Z"/></svg>
+              Google
+            </button>
+            <button type="button" class="btn btn-social" data-demo="Apple">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.3 12.7c0-2.4 2-3.6 2.1-3.6-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.1-.8-1.6 0-3.1.9-3.9 2.4-1.7 2.9-.4 7.2 1.2 9.6.8 1.1 1.7 2.4 3 2.4 1.2 0 1.6-.8 3.1-.8s1.9.8 3.1.7c1.3 0 2.1-1.2 2.9-2.3.9-1.3 1.3-2.6 1.3-2.7 0 0-2.5-1-2.5-3.9ZM14 5.4c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.8-1.5Z"/></svg>
+              Apple
+            </button>
+          </div>
+
+          <p class="signup-cta">Don't have an account? <a href="#" class="link" data-demo="Sign Up">Sign up now</a></p>
+        </form>
+
+        <!-- one-time code form -->
+        <form id="otpForm" class="tabpane is-hidden" data-pane="otp" novalidate>
+          <div class="field">
+            <label for="otpUser">Username</label>
+            <input type="text" id="otpUser" placeholder="Enter your username" autocomplete="username" spellcheck="false" />
+          </div>
+          <div class="field">
+            <label for="otpCode">One-time code</label>
+            <input type="text" id="otpCode" inputmode="numeric" placeholder="6-digit code" maxlength="6" />
+            <p class="field-error" id="err-otp" hidden></p>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit" id="otpBtn">
+            <span class="btn-label">Send code</span><span class="spinner" aria-hidden="true"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= VIEW: SMALL "NOT AVAILABLE" ERROR ======================= -->
+  <section id="view-unavailable" class="view is-hidden">
+    <div class="card mini-error">
+      <div class="mini-error-icon" aria-hidden="true">!</div>
+      <h2>This service is not available</h2>
+      <p>This service is not available in your area at the moment.</p>
+      <button class="btn btn-primary" type="button" id="unavailBack">Go back</button>
+    </div>
+  </section>
+
+  <!-- ======================= VIEW: GEO / LOCATION ERROR ======================= -->
+  <section id="view-geo" class="view is-hidden">
+    <div class="card geo-card">
+      <div class="geo-illustration" aria-hidden="true">
+        <svg viewBox="0 0 120 120" width="112" height="112" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="60" cy="60" r="46"/>
+          <path d="M14 60h92M60 14c14 14 14 78 0 92M60 14c-14 14-14 78 0 92"/>
+          <path d="M25 42h70M25 78h70"/>
+          <circle cx="60" cy="60" r="46" stroke-dasharray="4 6"/>
+        </svg>
+        <span class="geo-pin">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+        </span>
+        <span class="geo-slash"></span>
+      </div>
+
+      <h1>Sorry, this service is not supported in your location area</h1>
+      <p class="geo-sub">
+        This service is not available in your location area at the moment,
+        so we could not complete your sign in.
+      </p>
+
+      <div class="geo-actions">
+        <button class="btn btn-primary" type="button" id="geoBack">Back to log in</button>
+        <button class="btn btn-ghost" type="button" data-demo="Contact Support">Contact support</button>
+        <button class="btn btn-ghost" type="button" data-demo="Learn about supported countries">Supported countries</button>
+      </div>
+
+      <p class="geo-fine">
+        If you believe this is a mistake, your ISP may be routing traffic through a restricted region.
+        Try again later, or <a href="#" class="link" data-demo="Contact Support">contact our support team</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======================= VIEW: SUCCESS ======================= -->
+  <section id="view-ok" class="view is-hidden">
+    <div class="card ok-card">
+      <div class="ok-badge">✓</div>
+      <h1>Welcome back</h1>
+      <p class="geo-sub">
+        Authentication succeeded. Your account area is loading.
+      </p>
+      <div class="geo-actions">
+        <button class="btn btn-primary" type="button" id="okBack">Log out</button>
+        <button class="btn btn-ghost" type="button" data-demo="Go to Dashboard">Go to dashboard</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <h4>Domains</h4>
+      <ul>
+        <li><a href="#" data-demo="Domain Search">Domain Search</a></li>
+        <li><a href="#" data-demo="Domain Transfer">Domain Transfer</a></li>
+        <li><a href="#" data-demo="WHOIS">WHOIS</a></li>
+        <li><a href="#" data-demo="Free PositiveSSL">Free PositiveSSL</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hosting</h4>
+      <ul>
+        <li><a href="#" data-demo="Shared Hosting">Shared Hosting</a></li>
+        <li><a href="#" data-demo="WordPress Hosting">WordPress Hosting</a></li>
+        <li><a href="#" data-demo="VPS">VPS</a></li>
+        <li><a href="#" data-demo="Dedicated Servers">Dedicated Servers</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#" data-demo="Help Center">Help Center</a></li>
+        <li><a href="#" data-demo="Support Ticket">Open a ticket</a></li>
+        <li><a href="#" data-demo="Status">System status</a></li>
+        <li><a href="#" data-demo="Live Chat">Live chat</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#" data-demo="Terms of Use">Terms of Use</a></li>
+        <li><a href="#" data-demo="Privacy Policy">Privacy Policy</a></li>
+        <li><a href="#" data-demo="Cookie Policy">Cookie Policy</a></li>
+        <li><a href="#" data-demo="Legal">Legal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© 2026. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<script src="assets/app.js"></script>
+</body>
+</html>
